@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
+<title id="title">Learn the merges. Then reuse the rules.</title><desc id="desc">A Unicode character BPE with a visible boundary between training and encoding.</desc>
+<defs>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCFAF5"/><stop offset="1" stop-color="#F2F7FA"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 Z" fill="#586B77"/></marker>
+<style>text{font-family:"Avenir Next","Trebuchet MS",sans-serif;fill:#22313D}.display{font-family:Charter,Georgia,serif;font-weight:700}.small{letter-spacing:2px;font-weight:600}</style>
+</defs>
+<rect width="1600" height="1120" rx="24" fill="url(#paper)"/>
+<text x="64" y="58" font-size="19" style="fill:#AA8244" class="small">MECHANISM ATLAS  /  04</text>
+<text x="64" y="121" font-size="45" style="fill:#22313D" class="display">Learn the merges. Then reuse the rules.</text>
+<text x="64" y="165" font-size="23" style="fill:#586B77" class="">A Unicode character BPE with a visible boundary between training and encoding.</text>
+<text x="64" y="238" font-size="19" style="fill:#AA8244" class="small">A  /  TRAIN ON A CORPUS</text>
+<text x="900" y="238" font-size="19" style="fill:#4E7E9D" class="small">B  /  ENCODE NEW TEXT</text>
+<rect x="64" y="275" width="636" height="115" rx="18" fill="#FFFFFF" stroke="#CBD6DB" stroke-width="1.5"/>
+<text x="88" y="318" font-size="27" style="fill:#22313D" class="" font-weight="600">Weighted word spans</text>
+<text x="88" y="356" font-size="23" style="fill:#586B77" class="">Split on whitespace; begin with code points.</text>
+<path d="M 382 390 L 382 422" fill="none" stroke="#586B77" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="64" y="429" width="636" height="115" rx="18" fill="#FFFFFF" stroke="#CBD6DB" stroke-width="1.5"/>
+<text x="88" y="472" font-size="27" style="fill:#22313D" class="" font-weight="600">Count adjacent pairs</text>
+<text x="88" y="510" font-size="23" style="fill:#586B77" class="">Weight each occurrence by corpus frequency.</text>
+<path d="M 382 544 L 382 576" fill="none" stroke="#586B77" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="64" y="583" width="636" height="115" rx="18" fill="#FFFFFF" stroke="#CBD6DB" stroke-width="1.5"/>
+<text x="88" y="626" font-size="27" style="fill:#22313D" class="" font-weight="600">Merge the top pair</text>
+<text x="88" y="664" font-size="23" style="fill:#586B77" class="">Replace from left to right, without overlap.</text>
+<path d="M 382 698 L 382 730" fill="none" stroke="#586B77" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="64" y="737" width="636" height="115" rx="18" fill="#F5F0E5" stroke="#CBD6DB" stroke-width="1.5"/>
+<text x="88" y="780" font-size="27" style="fill:#22313D" class="" font-weight="600">Ordered merge rules</text>
+<text x="88" y="818" font-size="23" style="fill:#586B77" class="">Save each rule; recount for the next round.</text>
+<rect x="900" y="275" width="636" height="115" rx="18" fill="#FFFFFF" stroke="#CBD6DB" stroke-width="1.5"/>
+<text x="924" y="318" font-size="27" style="fill:#22313D" class="" font-weight="600">Unseen text</text>
+<text x="924" y="356" font-size="23" style="fill:#586B77" class="">Preserve whitespace as separate spans.</text>
+<path d="M 1218 390 L 1218 422" fill="none" stroke="#586B77" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="900" y="429" width="636" height="115" rx="18" fill="#FFFFFF" stroke="#CBD6DB" stroke-width="1.5"/>
+<text x="924" y="472" font-size="27" style="fill:#22313D" class="" font-weight="600">Initial symbol sequence</text>
+<text x="924" y="510" font-size="23" style="fill:#586B77" class="">Code points + an internal word-end marker.</text>
+<path d="M 1218 544 L 1218 576" fill="none" stroke="#586B77" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="900" y="583" width="636" height="115" rx="18" fill="#EDF4F8" stroke="#CBD6DB" stroke-width="1.5"/>
+<text x="924" y="626" font-size="27" style="fill:#22313D" class="" font-weight="600">Apply the learned rules</text>
+<text x="924" y="664" font-size="23" style="fill:#586B77" class="">Use training order; do not retrain here.</text>
+<path d="M 1218 698 L 1218 730" fill="none" stroke="#586B77" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="900" y="737" width="636" height="115" rx="18" fill="#FFFFFF" stroke="#CBD6DB" stroke-width="1.5"/>
+<text x="924" y="780" font-size="27" style="fill:#22313D" class="" font-weight="600">Pieces → original text</text>
+<text x="924" y="818" font-size="23" style="fill:#586B77" class="">Retain unseen characters; check round trip.</text>
+<path d="M 700 794 L 801 794 L 801 640 L 893 640" fill="none" stroke="#586B77" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="796" y="602" font-size="20" style="fill:#4E7E9D" class="" text-anchor="middle">reuse</text>
+<path d="M 700 630 L 758 630 L 758 486 L 703 486" fill="none" stroke="#586B77" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="7 6"/>
+<text x="790" y="475" font-size="19" style="fill:#AA8244" class="" text-anchor="middle">repeat</text>
+<rect x="64" y="919" width="1472" height="103" rx="18" fill="#EDF5F0" stroke="#CBD6DB" stroke-width="1.5"/>
+<text x="88" y="962" font-size="25" style="fill:#22313D" class="" font-weight="600">Counting and replacement are different operations.</text>
+<text x="88" y="1000" font-size="23" style="fill:#586B77" class="">Overlapping occurrences contribute to counts; a symbol is consumed at most once per merge.</text>
+<path d="M 64 1048 L 1536 1048" stroke="#CBD6DB" stroke-width="1.5" fill="none"/>
+<text x="64" y="1083" font-size="18" style="fill:#586B77" class="">Teaching BPE: code points + whitespace boundaries. Not a production token billing tool.</text>
+<text x="1536" y="1083" font-size="18" style="fill:#586B77" class="" text-anchor="end">Richard Chen  ·  Interactive AI Research Labs</text>
+</svg>
